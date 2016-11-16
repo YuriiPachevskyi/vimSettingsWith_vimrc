@@ -106,5 +106,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+#Mykola Ostrovskyy (mykola.ostrovskyy@globallogic.com)
+bind '"\e[A"':history-search-backward
+bind '"\e[B"':history-search-forward
+
 export   PATH=~/install:$PATH
 export GIT_EXTERNAL_DIFF=~/install/git_diff_wrapper.sh
